@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- BHM-09-18-2021 -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>INFOST 240-201 Assignment 2: Tables</title>
+		<style>
+			table {
+				border-collapse: collapse;
+				margin: 40px;
+			}
+			th {
+				padding: 10px;
+			}
+			td {
+				height: 50px;
+				width: 50px;
+				text-align: left;
+				vertical-align: top;
+				padding: 5px;
+			}
+			#my-birthday {
+				box-sizing: border-box;
+				background-color: aqua;
+				border: 5px solid blue;
+				position: relative;
+			}
+			.muted {
+				color: rgb(170, 170, 170);
+			}
+			#small-star {
+				position: absolute;
+				bottom: 4px;
+				right: 2px;
+				height: 40px;
+				width: 40px;
+				fill:yellow;
+			}
+			#big-star {
+				height: 200px;
+				width: 200px;
+				fill:blue;
+			}
+		</style>
+	</head>
+  <body>
+
+    <h1>Tables</h1>
+
+		<table border="1">
+			<tr>
+				<th colspan="7">March 2022</th>
+			</tr>
+			<tr>
+				<th>Su</th>
+				<th>Mo</th>
+				<th>Tu</th>
+				<th>We</th>
+				<th>Th</th>
+				<th>Fr</th>
+				<th>Sa</th>
+			</tr>
+
+			<tr>
+				<td></td>
+				<td></td>
+				<td>1</td>
+				<td>2</td>
+				<td>3</td>
+				<td>4</td>
+				<td>5</td>
+			</tr>
+
+			<tr>
+				<td>6</td>
+				<td>7</td>
+				<td>8</td>
+				<td>9</td>
+				<td>10</td>
+				<td>11</td>
+				<td>12</td>
+			</tr>
+
+			<tr>
+				<td id="my-birthday">13
+					<svg id="small-star" viewBox="0 0 200 200">
+						<polygon points="100,10 40,198 190,78 10,78 160,198"/>
+					</svg>
+				</td>
+				<td>14</td>
+				<td>15</td>
+				<td>16</td>
+				<td>17</td>
+				<td>18</td>
+				<td>19</td>
+			</tr>
+
+			<tr>
+				<td>20</td>
+				<td>21</td>
+				<td>22</td>
+				<td>23</td>
+				<td>24</td>
+				<td>25</td>
+				<td>26</td>
+			</tr>
+
+			<tr>
+				<td>27</td>
+				<td>28</td>
+				<td>29</td>
+				<td>30</td>
+				<td>31</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+
+		<div>
+			<h2>SVG Image</h2>
+			<svg id="big-star" viewBox="0 0 200 200">
+				<polygon points="100,10 40,198 190,78 10,78 160,198"/>
+			</svg>
+		</div>
+
+		<a href="../index.html">Go back</a>
+
+  </body>
+</html>
