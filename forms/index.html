@@ -1,11 +1,109 @@
 <!DOCTYPE html>
-<html>
-  <body>
+<html lang="en">
+	<head>
+		<!-- BHM-09-18-2021 -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>INFOST 240-201 Assignment 2: Tables</title>
+		<style>
+			body {
+				padding: 2rem;
+			}
+			form {
+				max-width: 500px;
+				margin: 1rem;
+			}
+			fieldset {
+				margin-bottom: 1rem;
+				padding: 1.5rem;
+			}
+			input[type="checkbox"],
+			input[type="radio"] {
+				margin-bottom: .5rem;
+			}
+			table {
+				border-spacing: .5rem;
+				text-align: right;
+			}
 
+
+		</style>
+	</head>
+	<body>
     <h1>Forms</h1>
-    <p>This is a subfolder page</p>
-    <p>This is the placeholder file for: Forms.</p>
+		<img src="images/wireframe.png" alt="Forms wireframe">
+		<h2>Pizza Order Form</h2>
+		<form>
+			<fieldset>
+				<legend>Delivery Type</legend>
+				<input type="radio" id="pickup" name="delivery_type" value="pickup" checked>
+				<label for="pickup">Pick up</label>
+				<br>
+				<input type="radio" id="delivery" name="delivery_type" value="delivery">
+				<label for="delivery">Delivery</label>
+			</fieldset>
+			<fieldset>
+				<legend>Size</legend>
+				<label for="size">Pick a size:</label>
+				<select name="size">
+					<option value="small">12&rdquo; Small</option>
+					<option value="medium">16&rdquo; Medium</option>
+					<option value="large" selected>20&rdquo; Large</option>
+				</select>
+			</fieldset>
+			<fieldset>
+				<legend>Toppings</legend>
+				<input type="checkbox" id="pineapple" name="toppings" value="pineapple" checked>
+				<label for="pineapple">Pineapple</label><br>
+				<input type="checkbox" id="olives" name="toppings" value="olives" checked>
+				<label for="olives">Olives</label><br>
+				<input type="checkbox" id="anchovies" name="toppings" value="anchovies">
+				<label for="anchovies">Anchovies</label><br>
+				<input type="checkbox" id="spinach" name="toppings" value="spinach">
+				<label for="spinach">Spinach</label><br>
+				<input type="checkbox" id="chicken" name="toppings" value="chicken" checked>
+				<label for="chicken">Chicken</label><br>
+				<input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+				<label for="pepperonie">Pepperoni</label><br>
+				<input type="checkbox" id="sausage" name="toppings" value="sausage">
+				<label for="sausage">Sausage</label>
+			</fieldset>
+			<fieldset>
+				<legend>Special Instructions</legend>
+				<textarea id="special_instructions" name="special_instructions" cols="40" rows="5">Extra pineapple.</textarea>
+			</fieldset>
+			<fieldset>
+				<legend>Create an Account</legend>
+				<table>
+					<tr>
+						<td>
+							<label for="username">Username:</label>
+						</td>
+						<td>
+							<input type="text" id="username" name="username">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="email">Email:</label>
+						</td>
+						<td>
+							<input type="text" id="email" name="email">
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<label for="password">Password:</label>
+						</td>
+						<td>
+							<input type="password" id="password" name="password">
+						</td>
+					</tr>
+				</table>
+			</fieldset>
+			<input type="reset" value="Start Over">
+			<input type="submit" value="Place Order">
+		</form>
 		<a href="../index.html">Go back</a>
-
   </body>
 </html>
