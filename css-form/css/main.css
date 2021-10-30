@@ -1,0 +1,23 @@
+html {
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: rgb(32, 32, 32);
+}
+
+.page {
+	padding: 3rem;
+	margin: 3rem auto;
+	max-width: 800px;
+	border-width: 10px;
+	border-style: ridge;
+	/* box-shadow: 1px 1px 10px 5px rgb(196, 196, 196); */
+	/* display: flex; */
+	/* height: 900px; */
+}

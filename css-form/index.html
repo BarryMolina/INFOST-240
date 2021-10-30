@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+	<head>
+		<!-- BHM-10-23-2021 -->
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>CSS Layout</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
   <body>
-
-    <h1>CSS Form</h1>
-    <p>This is a subfolder page</p>
-    <p>This is the placeholder file for: CSS Form.</p>
-		<a href="../index.html">Go back</a>
-
+		<div class="page">
+			<h1>Product Review Form</h1>
+			<form>
+				<div class="contact-info">
+					<label for="name">Name:</label>
+					<input type="text" name="name" id="name">
+					<label for="email">Email:</label>
+					<input type="email" name="email" id="email">
+				</div>
+				<div class="stars-select">
+					<label for="stars">Number of stars:</label>
+					<select name="stars">
+						<option value="5">&starf;&starf;&starf;&starf;&starf;</option>
+						<option value="4">&starf;&starf;&starf;&starf;</option>
+						<option value="3">&starf;&starf;&starf;</option>
+						<option value="2">&starf;&starf;</option>
+						<option value="1">&starf;</option>
+					</select>
+				</div>
+				<div class="recommend-btns">
+					<input type="radio" id="do-recommend" name="recommend" value="true" checked>
+					<label for="do-recommend">I would recommned this product to friend</label>
+					<input type="radio" id="dont-recommend" name="recommend" value="false">
+					<label for="dont-recommend">I would not recommned this product to friend</label>
+				</div>
+				<div class="review-txt">
+					<label for="review">What do you have to say about this product?</label>
+					<textarea id="review" name="review" cols="40" rows="5"></textarea>
+				</div>
+				<input type="submit" value="Enter">
+			</form>
+			<a href="../index.html">Go back</a>
+		</div>
   </body>
 </html>
