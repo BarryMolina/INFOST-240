@@ -12,10 +12,14 @@
 			<h1>Product Review Form</h1>
 			<form>
 				<div class="contact-info">
-					<label for="name">Name:</label>
-					<input type="text" name="name" id="name">
-					<label for="email">Email:</label>
-					<input type="email" name="email" id="email">
+					<span class="text-input">
+						<input type="text" name="name" id="name" placeholder=" ">
+						<label for="name">Name</label>
+					</span>
+					<span class="text-input">
+						<input type="email" name="email" id="email" placeholder=" ">
+						<label for="email">Email</label>
+					</span>
 				</div>
 				<div class="stars-select">
 					<label for="stars">Number of stars:</label>
@@ -27,17 +31,21 @@
 						<option value="1">&starf;</option>
 					</select>
 				</div>
-				<div class="recommend-btns">
-					<input type="radio" id="do-recommend" name="recommend" value="true" checked>
-					<label for="do-recommend">I would recommned this product to friend</label>
-					<input type="radio" id="dont-recommend" name="recommend" value="false">
-					<label for="dont-recommend">I would not recommned this product to friend</label>
+				<div class="recommend">
+					<div class="recommend-option">
+						<input type="radio" id="do-recommend" name="recommend" value="true" checked>
+						<label for="do-recommend">I would recommend this product to friend</label>
+					</div>
+					<div class="recommend-option">
+						<input type="radio" id="dont-recommend" name="recommend" value="false">
+						<label for="dont-recommend">I would not recommend this product to friend</label>
+					</div>
 				</div>
 				<div class="review-txt">
 					<label for="review">What do you have to say about this product?</label>
 					<textarea id="review" name="review" cols="40" rows="5"></textarea>
 				</div>
-				<input type="submit" value="Enter">
+				<input class="submit-button" type="submit" value="Enter">
 			</form>
 			<a href="../index.html">Go back</a>
 		</div>

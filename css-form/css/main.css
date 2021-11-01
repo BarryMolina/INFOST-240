@@ -17,7 +17,60 @@ body {
 	max-width: 800px;
 	border-width: 10px;
 	border-style: ridge;
-	/* box-shadow: 1px 1px 10px 5px rgb(196, 196, 196); */
-	/* display: flex; */
-	/* height: 900px; */
 }
+
+.contact-info {
+	padding: 2rem 0 3rem;
+}
+
+.contact-info input:focus + label,
+.contact-info input:not(:placeholder-shown) + label {
+	transform: scale(.6) translate(-10px, -20px);
+}
+
+.text-input {
+	position: relative;
+	margin-right: 2rem;
+}
+
+.text-input label {
+	transition: .5s ease;
+	position: absolute;
+	left: 0;
+}
+
+.contact-info input {
+	border-style: none none solid none;
+	outline: none;
+	background-color: white;
+	width: 200px;
+}
+
+.stars-select {
+	padding-bottom: 2rem 0;
+}
+
+.stars-select select {
+	font-size: 1.2rem;
+	color: gold;
+	background-color: aliceblue;
+}
+
+.recommend {
+	padding: 1rem 0 2rem;
+}
+
+.recommend-option {
+	padding: .5rem 0;
+}
+
+.review-txt textarea {
+	margin: .5rem 0;
+}
+
+.submit-button {
+	padding: .2rem 1rem;
+	margin: .5rem 0 1rem;
+	font-size: large;
+}
+
