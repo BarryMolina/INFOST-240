@@ -34,7 +34,7 @@ body {
 }
 
 .text-input label {
-	transition: .5s ease;
+	transition: .2s;
 	position: absolute;
 	left: 0;
 }
